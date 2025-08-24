@@ -1,0 +1,75 @@
+/* 文章页面自定义样式 */
+
+/* 文章内容区域优化 */
+#postBody {
+    line-height: 1.8;
+    font-size: 16px;
+    color: var(--color-fg-default);
+}
+
+/* 文章标题样式 */
+.postTitle {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+/* 代码块美化 */
+.highlight {
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px 0;
+}
+
+/* 引用块样式 */
+blockquote {
+    border-left: 4px solid var(--color-accent-emphasis);
+    background: var(--color-canvas-subtle);
+    padding: 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0;
+}
+
+/* 图片样式 */
+#postBody img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+#postBody img:hover {
+    transform: scale(1.02);
+}
+
+/* 链接样式 */
+#postBody a {
+    color: var(--color-accent-fg);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#postBody a:hover {
+    border-bottom: 1px solid var(--color-accent-fg);
+}
+
+/* 表格样式 */
+#postBody table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    #postBody {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .postTitle {
+        font-size: 20px;
+    }
+}
