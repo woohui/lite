@@ -1,0 +1,21 @@
+# 忽略docs文件夹（由Gmeek自动生成）
+docs/
+
+# 忽略系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 忽略编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 忽略日志文件
+*.log
